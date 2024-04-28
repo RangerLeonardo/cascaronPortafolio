@@ -37,8 +37,11 @@ body{
   font-size: 6rem;
 }
 
-.cambiar_lenguaje {
+.light_and_english {
   position: relative;
+}
+
+.cambiar_lenguaje{
   display: inline;
 }
 
@@ -49,8 +52,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/Cascaron\ Portafolio/images/english.png');
-  background-size: contain; /* Ajusta el tamaño de la imagen */
+  content: url('/CascaronPortafolio/images/english.png');
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }

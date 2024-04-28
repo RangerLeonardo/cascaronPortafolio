@@ -36,11 +36,26 @@ body{
   letter-spacing: .2rem;
   font-size: 6rem;
 }
-.cambiar_lenguaje{
+
+.cambiar_lenguaje {
+  position: relative;
   display: inline;
 }
 
-.cambiar_lenguaje:hover{
+.cambiar_lenguaje::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/Cascaron\ Portafolio/images/english.png');
+  background-size: contain; /* Ajusta el tamaño de la imagen */
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.cambiar_lenguaje:hover::before {
+  opacity: 1;
   cursor: pointer;
-  content: url('/Cascaron\ Portafolio/images/english.png');
 }

@@ -3,7 +3,7 @@ const sobreMi = document.getElementById("sobre_mi");
 const habilidadesBlandas = document.getElementById("habilidades_blandas");
 const proyectos = document.getElementById("proyectos");
 const contactame = document.getElementById("contactame");
-const english = document.getElementById("english");
+const ingles = document.getElementById("ingles");
 
 inicio.addEventListener("click", function(){
     console.log("Isidro se la come");
@@ -25,6 +25,6 @@ contactame.addEventListener("click", function(){
     console.log("Isidro se la come");
 });
 
-english.addEventListener("click", function(){
+ingles.addEventListener("click", function(){
     console.log("Isidro se la come");
 });

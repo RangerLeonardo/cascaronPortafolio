@@ -10,6 +10,13 @@ body{
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
+
+:root {
+  --naranja-primario: #F16B4E;
+  --negro-primario: #1e1e1e;
+  --blanco-primario: #FFF;
+}
+
 .navegacion_principal{
   display: flex;
   margin-left: 5rem;
@@ -23,20 +30,14 @@ body{
 }
 
 .navegacion_p{
-  font-weight: bold;
   font-size: 2.5rem;
   display: inline;
   transition: color 0.5s ease-in-out;
 }
 
 .navegacion_p:hover{
-  color: #F16B4E;
+  color:var(--naranja-primario);
   transition: color 0.4s ease-in-out;
-}
-
-.titulo_principal{
-  letter-spacing: .2rem;
-  font-size: 6rem;
 }
 
 #logo{
@@ -47,10 +48,6 @@ body{
 
 #logo:hover, #lightnes:hover, #ingles:hover,.navegacion_p:hover, #curriculum:hover{
   cursor: pointer;
-}
-
-.principal_div{
-  display: flex;
 }
 
 #lightnes, #ingles, #curriculum{
@@ -66,28 +63,19 @@ body{
 
 }
 
-#curriculum:hover {
-  content: url('/CascaronPortafolio/images/Download.png');
-
-}
-
-
-#ingles:hover {
-  content: url('/CascaronPortafolio/images/English.png'); /* Cambia la ruta a la imagen alternativa */
-}
-
-.tooltipIngles {
+.tooltipIngles, .tooltipCurriculum {
   position: relative;
-  display: inline-block;
+  display: block;
+  margin: 0;
 }
 
 .tooltipIngles::after {
   content: "Clic para cambiar al inglés.";
   visibility: hidden;
   width: 200px;
-  color: #fff;
+  color:var(--blanco-primario);
   text-align: center;
-  padding: 5px 0;
+  padding: 0;
   border-radius: 6px;
   position: absolute;
   bottom: 80%; /* Coloca el tooltip arriba del elemento */
@@ -103,17 +91,11 @@ body{
   opacity: 1;
 }
 
-.tooltipCurriculum {
-  position: relative;
-  display: inline-block;
-  transition: opacity 0.3s ease;
-}
-
 .tooltipCurriculum::after {
   content: "Descargar CV";
   visibility: hidden;
   width: 200px;
-  color: #fff;
+  color: var(--blanco-primario);
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
@@ -130,3 +112,43 @@ body{
   visibility: visible;
   opacity: 1;
 }
+
+.principal_div{
+  display: flex;
+  justify-content: center;
+}
+
+.titulo_principal_div{
+  justify-content: center;
+}
+.navegacion_p, .presentacion_titulo, .locacion{
+  font-weight: bold;
+}
+.presentacion_titulo{
+  color: var(--naranja-primario);
+  font-size: 1.8rem;
+
+}
+
+.titulo_principal{
+  letter-spacing: .2rem;
+  font-size: 8rem;
+}
+
+img{
+  object-fit: contain;
+}
+
+#inosuke{
+  height: 700px;
+  width: 800px;
+}
+
+.locacion{
+  color: var(--blanco-primario);
+}
+
+.refran{
+  font-style: italic;
+}
+

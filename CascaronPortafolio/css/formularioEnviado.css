@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+a{
+  text-decoration: none;
+}
+:root {
+  --naranja-primario: #F16B4E;
+  --negro-primario: #1e1e1e;
+  --blanco-primario: #FFF;
+}
+
+h2,h3,h4{
+  font-size: 2.3rem;
+  color: var(--naranja-primario);
+}

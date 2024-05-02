@@ -10,13 +10,20 @@ body{
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
-
+a{
+  text-decoration: none;
+}
 :root {
   --naranja-primario: #F16B4E;
   --negro-primario: #1e1e1e;
   --blanco-primario: #FFF;
 }
 
+h2,h3,h4{
+  font-size: 2.3rem;
+  color: var(--naranja-primario);
+}
+/* Header start */
 .navegacion_principal{
   display: flex;
   margin-left: 5rem;
@@ -46,14 +53,25 @@ body{
 
 }
 
-#logo:hover, #lightnes:hover, #ingles:hover,.navegacion_p:hover, #curriculum:hover{
+#logo:hover{
   cursor: pointer;
+}
+
+/* header end */
+
+#lightnes:hover, #ingles:hover,.navegacion_p:hover, #curriculum:hover{
+  cursor: pointer;
+  transition: transform 0.2s;
+  transform: scale(1.1);
 }
 
 #lightnes, #ingles, #curriculum{
   max-width: 5rem;
   margin: 2rem;
   margin-bottom: 0;
+  transform: scale(1.0);
+  transition: transform 0.5s;
+
 }
 
 .luz_traduccion_download {
@@ -135,10 +153,6 @@ body{
   font-size: 8rem;
 }
 
-img{
-  object-fit: contain;
-}
-
 #inosuke{
   height: 700px;
   width: 800px;
@@ -152,3 +166,64 @@ img{
   font-style: italic;
 }
 
+/* Form start */
+.form_principal{
+  display: flex;
+  justify-content: center;
+}
+.div_label_input{
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.fieldset_principal{
+  border: 1rem solid var(--blanco-primario);
+  width: auto;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Form end */
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.div_img{
+  display: flex;
+}
+/* Section footer start */
+.div_img{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.img_footer{
+  width: 4rem;
+
+}
+
+.img_footer{
+  max-width: 5rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  transform: scale(1.0);
+  transition: transform 0.5s;
+}
+
+.img_footer:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.footer_principal{
+  background-color: var(--naranja-primario);
+}
+
+/* Section footer end */

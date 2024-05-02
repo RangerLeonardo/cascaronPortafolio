@@ -14,7 +14,7 @@
     <header>
         <section class="navegacion_principal">
             <div class="navegacion_logo navegacion_div">
-                <img id="logo" src="/CascaronPortafolio/images/Logo.png" alt="logo">
+                <img id="logo" src="/CascaronPortafolio/images/JPG_PNG/Logo.png" alt="logo">
             </div>
             <div class="navegacion_div"><p class="navegacion_p" id="inicio">Inicio</p></div>
             <div class="navegacion_div"><p class="navegacion_p" id="sobre_mi">Sobre mí</p></div>
@@ -28,19 +28,19 @@
         <div class="luz_traduccion_download">
             <div class="ligh_or_darkness">
                 <div class="light">
-                    <img id="lightnes" src="/CascaronPortafolio/images/lightness.png" alt="cambiar a modo luz">
+                    <img id="lightnes" src="/CascaronPortafolio/images/JPG_PNG/lightness.png" alt="cambiar a modo luz">
                 </div>
             </div>
 
             <div class="traduccion" >
                 <div class="english tooltipIngles">
-                    <img id="ingles" src="/CascaronPortafolio/images/Español.png" alt="Cambiar lenguaje a inglés.">
+                    <img id="ingles" src="/CascaronPortafolio/images/JPG_PNG/English.png" alt="Cambiar lenguaje a inglés.">
                 </div>
             </div>
 
             <div class="download" >
                 <div class="download_div tooltipCurriculum">
-                    <img id="curriculum" src="/CascaronPortafolio/images/CV.png" alt="boton para descargar curriculum">
+                    <img id="curriculum" src="/CascaronPortafolio/images/JPG_PNG/CV.png" alt="boton para descargar curriculum">
                 </div>
             </div>
         </div>
@@ -48,10 +48,10 @@
         <section class="principal">
             <div class="principal_div">
                 <div class="titulo_principal_div">
-                    <h1 class="titulo_principal">Adata<br>Barrera<br>Leonardo</h1>
+                    <h1 class="titulo_principal">Adata Barrera Brandon Leonardo</h1>
                 </div>
                 <div class="img_principal_div">
-                    <img id="inosuke" src="/CascaronPortafolio/images/Inosuke_SIN_FONDO.png" alt="Representación foto de como soy.">
+                    <img id="inosuke" src="/CascaronPortafolio/images/JPG_PNG/Inosuke_SIN_FONDO.png" alt="Representación foto de como soy.">
                 </div>
 
                 <section class="presentacion">
@@ -63,6 +63,64 @@
             </div>
         </section>
     </main>
+
+    <section class="formulario" id="formulario">
+        <div class="div_contactame" style="display: flex;">
+            <div>
+                <h2 class="h2_contactame">Contactame</h2>
+            </div>
+            <div>
+                <hr style="border-color: orangered; width: 100px;">
+            </div>
+        </div>
+        <form action="/CascaronPortafolio/html/formularioEnviado.html" class="form_principal">
+            <fieldset class="fieldset_principal">
+                <div class="div_label_input">
+                    <label for="nombre" id="label_nombre">Nombre(s):</label>
+                    <input type="text" id="input_nombre" name="apellido">
+                </div>
+                <div class="div_label_input">
+                    <label for="apellido" id="label_apellido">Apellidos:</label>
+                    <input type="text" id="input_apellido" name="apellido" required>
+                </div>
+                <div class="div_label_input">
+                    <label for="asunto" id="label_asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required> 
+                </div>
+                <div class="div_label_input">
+                    <label for="correo" id="label_correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="div_label_input">
+                    <label for="telefono" id="label_telefono">Num. telefonico:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="div_label_input">
+                    <label for="empresa" id="label_correo">Empresa:</label>
+                    <input type="text"id="empresa" name="empresa" >
+                </div>
+                <div class="div_label_input">
+                    <label for="mensaje" id="label_mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                </div>
+
+                <input type="submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer_principal">
+        <div class="div_footer">
+            <div class="div_derechos">
+                <p class="p_derechos">© Todos los derechos reservados</p>
+            </div>
+            <div class="div_img">
+                <img class="img_footer" src="/CascaronPortafolio/images/webp/linkedin_1.webp" alt="Mi linkedin" onerror="this.src='/CascaronPortafolio/images/iconos/linkedin.png'">
+                <img class="img_footer" src="/CascaronPortafolio/images/webp/github-gris_1.webp" alt="Mi github" onerror="this.src='/CascaronPortafolio/images/iconos/github-gris.png'">
+                <img class="img_footer" src="/CascaronPortafolio/images/webp/gmail.webp" alt="Mi github" onerror="this.src='/CascaronPortafolio/images/JPG_PNG/iconos/gmail.png'">
+            </div>
+        </div>
+    </footer>
 
     <script src="/CascaronPortafolio/scripts/scripts.js"></script>
 </body>

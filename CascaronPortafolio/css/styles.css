@@ -1,28 +1,39 @@
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }*, *:before, *:after {
-    box-sizing: inherit;
-  }
-body{
-    background-color: #1e1e1e;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-}
-a{
-  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}*, *:before, *:after {
+  box-sizing: inherit;
 }
 :root {
   --naranja-primario: #F16B4E;
   --negro-primario: #1e1e1e;
+  --negro-secundario: #222222;
   --blanco-primario: #FFF;
+}
+
+body{
+    background-color: var(--negro-primario);
+    color: var(--blanco-primario);
+    font-family: "Inter" , sans-serif;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    margin: 0;
+}
+a{
+  text-decoration: none;
 }
 
 h2,h3,h4{
   font-size: 2.3rem;
   color: var(--naranja-primario);
 }
+.linea_generica_naranja{
+  border: .18rem solid var(--naranja-primario); 
+  width: 12rem;
+  margin-top: 3.6rem;
+  margin-left: 1.3rem;
+}
+
 /* Header start */
 .navegacion_principal{
   display: flex;
@@ -44,13 +55,12 @@ h2,h3,h4{
 
 .navegacion_p:hover{
   color:var(--naranja-primario);
-  transition: color 0.4s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 #logo{
   max-width: 5rem;
   margin-top: -.5rem;  
-
 }
 
 #logo:hover{
@@ -131,6 +141,15 @@ h2,h3,h4{
   opacity: 1;
 }
 
+
+.div_principal_contenido{
+  height: 100vh;
+}
+
+.principal{
+  height: 100vh;
+}
+
 .principal_div{
   display: flex;
   justify-content: center;
@@ -154,6 +173,8 @@ h2,h3,h4{
 }
 
 #inosuke{
+  /* position: absolute; */
+  top: 0;
   height: 700px;
   width: 800px;
 }
@@ -166,7 +187,38 @@ h2,h3,h4{
   font-style: italic;
 }
 
+/* section sobre mi inicio*/
+.section_sobre_mi{
+  background-color: var(--negro-secundario);
+}
+
+/* section tecnologias inicio*/
+.section_tecnologias{
+  background-color: var(--negro-secundario);
+  height: 30rem;
+}
+
+
+/* section tecnologias fin */
+
+
 /* Form start */
+.fieldset_principal{
+  border: 1rem solid var(--blanco-primario);
+  width: auto;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+.section_formulario{
+  background-color: var(--negro-primario);
+  width: 100%;
+}
+
+.div_generico{
+  scroll-snap-align: x mandatory;
+  display: flex;
+}
 .form_principal{
   display: flex;
   justify-content: center;
@@ -178,16 +230,11 @@ h2,h3,h4{
   font-size: 2rem;
 }
 
-.fieldset_principal{
-  border: 1rem solid var(--blanco-primario);
-  width: auto;
-  padding: 4rem;
-  margin-bottom: 4rem;
-}
 
 /* Form end */
 footer{
-  position: absolute;
+  background-color: var(--negro-secundario);
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -221,9 +268,4 @@ footer{
   transform: scale(1.1);
   transition: transform 0.3s;
 }
-
-.footer_principal{
-  background-color: var(--naranja-primario);
-}
-
 /* Section footer end */

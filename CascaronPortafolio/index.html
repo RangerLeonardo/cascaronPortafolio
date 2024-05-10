@@ -108,17 +108,21 @@
             </div>
         </div>
 
-        <div>
+        <div class="div_sobre_mi_global">
             <div class="div_sobre_mi_presentacion">
-                <p>"El maestro se ha equivocado más veces <br>
-                    de lo que el estudiante lo ha intentado"</p>
-                <p>Soy desarrollador web full stack, usando como lenguaje principal Java, <br> 
-                me especializo en el back-end puesto que es un área que para mí es muy desafiante <br>
-                y representa una satisfacción resolver problemas complejos, domino tecnologías como: <br>
-                HTML, CSS, JavaScript, Java, SQL, Spring boot, SASS, etc. </p>
-                <p>Me gusta el trabajo en equipo pues agiliza el completar las metas dentro del proyecto, <br>
-                conectas con las personas y aprendes cosas de ellos que pueden ser utiles en alguna situación <br>
-                soy ambicioso y me gusta trabajar hasta completar los proyectos.</p>
+                <div class="div_sobre_mi_refran">
+                    <p class="sobre_mi_refran">"El maestro se ha equivocado más veces <br>
+                        de lo que el estudiante lo ha intentado"</p>
+                </div>
+                <div class="div_sobre_mi_descripcion">
+                    <p>Soy desarrollador web full stack, usando como lenguaje principal Java, <br> 
+                        me especializo en el back-end puesto que es un área que para mí es muy desafiante <br>
+                        y representa una satisfacción resolver problemas complejos, domino tecnologías como: <br>
+                        HTML, CSS, JavaScript, Java, SQL, Spring boot, SASS, etc. </p>
+                        <p>Me gusta el trabajo en equipo pues agiliza el completar las metas dentro del proyecto, <br>
+                            conectas con las personas y aprendes cosas de ellos que pueden ser utiles en alguna situación <br>
+                            soy ambicioso y me gusta trabajar hasta completar los proyectos.</p>
+                </div>
             
             </div>
             <div class="div_sobre_mi_gustos_disgustos">
@@ -264,50 +268,75 @@
                 <hr class="linea_generica_naranja"/>
             </div>
         </div>
+
         <form action="/CascaronPortafolio/html/formularioEnviado.html" class="form_principal">
+            <div class="div_form">
             <fieldset class="fieldset_principal">
                 <div class="div_label_input">
-                    <label for="nombre" id="label_nombre">Nombre(s):</label>
-                    <input type="text" id="input_nombre" name="apellido" />
+                    <div class="div_label">
+                        <label class="form_label" for="nombreCompleto" id="label_nombreCompleto">Nombre completo:</label>
+                    </div>
+                    <div>
+                        <input class="input_form" type="text" id="input_nombreCompleto" name="nombreCompleto" required placeholder="Ingresa tu nombre completo..."/>
+                    </div>
                 </div>
                 <div class="div_label_input">
-                    <label for="apellido" id="label_apellido">Apellidos:</label>
-                    <input type="text" id="input_apellido" name="apellido" required />
+                    <div class="div_label">
+                        <label class="form_label" for="asunto" id="label_asunto">Asunto:</label>
+                    </div>
+                    <div>
+                        <input class="input_form" type="text" id="asunto" name="asunto" required placeholder="Ingresa el asunto por el cuál quieres que te contacte..."/>
+                    </div>
                 </div>
                 <div class="div_label_input">
-                    <label for="asunto" id="label_asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" required />
+                    <div class="div_label">
+                        <label class="form_label" for="correo" id="label_correo">Correo:</label>
+                    </div>
+                    <div>
+                        <input class="input_form" type="email" id="correo" name="correo" required placeholder="Ingresa tu correo..."/>
+                    </div>
                 </div>
                 <div class="div_label_input">
-                    <label for="correo" id="label_correo">Correo:</label>
-                    <input type="email" id="correo" name="correo" required />
+                    <div class="div_label">
+                        <label class="form_label" for="telefono" id="label_telefono">Num. telefónico:</label>
+                    </div>
+                    <div>
+                        <input class="input_form" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número telefónico (opcional)..."/>
+                    </div>
                 </div>
                 <div class="div_label_input">
-                    <label for="telefono" id="label_telefono">Num. telefonico:</label>
-                    <input type="tel" id="telefono" name="telefono" required />
+                    <div class="div_label">
+                        <label class="form_label" for="empresa" id="label_correo">Empresa:</label>
+                    </div>
+                    <div>
+                        <input class="input_form" type="text" id="empresa" name="empresa" placeholder="Ingresa el nombre de tu empresa (opcional)..." />
+                    </div>
                 </div>
-                <div class="div_label_input">
-                    <label for="empresa" id="label_correo">Empresa:</label>
-                    <input type="text" id="empresa" name="empresa" />
+                <div class="div_label_input" id="label_text_area">
+                        <label class="form_label" for="mensaje" id="label_mensaje">Mensaje:</label>
                 </div>
-                <div class="div_label_input">
-                    <label for="mensaje" id="label_mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                <div class="div_text_area">
+                    <textarea name="mensaje"name="mensaje" id="mensaje" cols="30" rows="10" required placeholder="Ingresar mensaje..."></textarea>
                 </div>
-
-                <input type="submit" />
+                <div class="div_btn">
+                    <input type="submit" class="btn_enviar_formulario"/>
+                </div>
             </fieldset>
+        </div>
         </form>
     </section>
 <!-- Formulario fin -->
 
 <!-- Footer inicio -->
     <footer class="footer_principal">
+
         <div class="div_footer">
-            <div class="div_derechos">
-                <p class="p_derechos">© Todos los derechos reservados</p>
+
+            <div class="div_parrafo">
+                <p>© Todos los derechos reservados</p>
             </div>
-            <div class="div_img">
+
+            <div>
                 <img class="img_footer" src="/CascaronPortafolio/images/webp/linkedin_1.webp" alt="Mi linkedin"
                     onerror="this.src='/CascaronPortafolio/images/iconos/linkedin.png'" />
                 <img class="img_footer" src="/CascaronPortafolio/images/webp/github-gris_1.webp" alt="Mi github"
@@ -315,6 +344,7 @@
                 <img class="img_footer" src="/CascaronPortafolio/images/webp/gmail.webp" alt="Mi github"
                     onerror="this.src='/CascaronPortafolio/images/JPG_PNG/iconos/gmail.png'" />
             </div>
+
         </div>
     </footer>
 <!-- footer fin -->

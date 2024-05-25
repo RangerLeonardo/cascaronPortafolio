@@ -37,11 +37,26 @@ h2,h3,h4{
   display: flex;
 }
 
+.div_generico_centrado{
+  margin-left: 2rem;
+  scroll-snap-align: x mandatory;
+  display: flex;
+  justify-content: center;
+}
+
 .linea_generica_naranja{
   border: .18rem solid var(--naranja-primario); 
   width: 12rem;
   margin-top: 3.4rem;
   margin-left: 1rem;
+}
+
+.linea_generica_naranja_centrada{
+  border: .18rem solid var(--naranja-primario); 
+  width: 5rem;
+  margin-top: 3.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* Header start */
@@ -63,9 +78,9 @@ h2,h3,h4{
   transition: color 0.5s ease-in-out;
 }
 
-.navegacion_p:hover{
+.navegacion_div p:hover{
   color:var(--naranja-primario);
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease;
 }
 
 #logo{
@@ -160,13 +175,14 @@ h2,h3,h4{
   height: 100vh;
 }
 
+/* Section Nombre, img, frase */
 .principal_div{
   display: flex;
   justify-content: center;
 }
 
 .titulo_principal_div{
-  justify-content: center;
+  margin-left: 10rem;
 }
 .navegacion_p, .presentacion_titulo, .locacion{
   font-weight: bold;
@@ -179,12 +195,11 @@ h2,h3,h4{
 
 .titulo_principal{
   letter-spacing: .2rem;
-  font-size: 8rem;
+  font-size: 12rem;
 }
 
 #inosuke{
   /* position: absolute; */
-  top: 0;
   height: 700px;
   width: 800px;
 }
@@ -214,12 +229,12 @@ h2,h3,h4{
   font-variation-settings:"slnt" 0;
 }
 .div_sobre_mi_refran{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .div_sobre_mi_descripcion{
   align-items: justify;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 
@@ -308,7 +323,7 @@ h2,h3,h4{
 .input_form{
   width: 60rem;
   height: 3rem;
-  background-color: var(--blanco-primario);
+  background-color: var( );
   filter: brightness(120%);
 }
 
@@ -356,6 +371,7 @@ h2,h3,h4{
 .btn_enviar_formulario:hover{
   background-color: var(--negro-secundario);
   color: var(--naranja-primario);
+  border: 1px solid #900C3F;
 }
 
 .div_label_input{

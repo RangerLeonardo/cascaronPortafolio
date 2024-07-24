@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="div_principal_contenido">
+    <div class="div_principal_contenido"  id="smoothInicio">
         <!-- Navegacion inicio -->
         <header>
             <section class="navegacion_principal">
@@ -21,21 +21,29 @@
                     <img id="logo" src="/CascaronPortafolio/images/JPG_PNG/Logo.png" alt="logo" />
                 </div>
                 <div class="navegacion_div">
-                    <p class="navegacion_p" id="inicio">Inicio</p>
+                    <a href="#smoothInicio">
+                        <p class="navegacion_p" id="inicio">Inicio</p>
+                    </a>
                 </div>
                 <div class="navegacion_div">
-                    <p class="navegacion_p" id="sobre_mi">Sobre mí</p>
+                    <a href="#smoothSombreMi">
+                        <p class="navegacion_p" id="sobre_mi">Sobre mí</p>
+                    </a>
                 </div>
                 <div class="navegacion_div">
-                    <p class="navegacion_p" id="habilidades_blandas">
-                        Habilidades blandas
-                    </p>
+                    <a href="#smoothProyectos">
+                        <p class="navegacion_p" id="proyectos">Proyectos</p>
+                    </a>
                 </div>
                 <div class="navegacion_div">
-                    <p class="navegacion_p" id="proyectos">Proyectos</p>
+                    <a href="#smoothTecnologias">
+                        <p class="navegacion_p" id="habilidades_blandas">Tecnologías</p>
+                    </a>
                 </div>
                 <div class="navegacion_div">
-                    <p class="navegacion_p" id="contactame">Contactame</p>
+                    <a href="#smoothContactame">                    
+                        <p class="navegacion_p">Contactame</p>
+                    </a>
                 </div>
             </section>
         </header>
@@ -67,31 +75,36 @@
                 </div>
             </div>
 
-            <section>
-                <div class="principal_div">
-                    <div class="titulo_principal_div">
-                        <h1 class="titulo_principal">ADATA BARRERA LEONARDO</h1>
-                    </div>
-                    <div class="div_img_principal">
-                        <img id="inosuke" src="/CascaronPortafolio/images/JPG_PNG/Inosuke_SIN_FONDO.png"
-                            alt="Representación foto de como soy." />
-                    </div>
+            <section class="section_contenido_principal">
+                <div class="div_titulo_principal">
+                    <h1 class="titulo_principal"> 
+                        <span class="span_title">ADATA</span><br> 
+                        <span class="span_title">BARRERA</span><br>
+                        <span class="span_title">BRANDON</span><br> 
+                        <span class="span_title">LEONARDO</span><br> 
+                    </h1>
+                </div>
 
-                    <section class="presentacion">
+                <div class="div_img_principal">
+                    <img id="img_principal" src="/CascaronPortafolio/images/JPG_PNG/Inosuke_SIN_FONDO.png" alt="Imagen mia">
+                </div>
+                <div class="div_descripcion_sobre_mi_principal">
+                    <div class="div_presentacion_titulo">
                         <div>
                             <h2 class="presentacion_titulo">Desarrollador web full-stack</h2>
-                            <div>
-                                <hr class="linea_generica_naranja"/>
-                            </div>
                         </div>
+                        <div>
+                            <hr class="linea_generica_naranja"/>
+                        </div>
+                    </div>
+                    <div>
                         <p class="locacion">
                             Viviendo en Michoacán, México. Fan de la buena comida.
-                        </p>
-                        <p class="refran">
                             ”El hombre no puede obtener nada sin primero dar algo a cambio.”
                         </p>
-                    </section>
+                    </div>
                 </div>
+
             </section>
         </main>
         <!-- Seccion principal fin -->
@@ -99,7 +112,7 @@
 
 <!-- Sobre mi inicio -->
     <section class="section_sobre_mi">
-        <div class="div_generico">
+        <div class="div_generico"  id="smoothSombreMi">
             <div>
                 <h2>Sobre mí</h2>
             </div>
@@ -137,7 +150,7 @@
 <!-- Proyectos inicio -->
 </div>
 <div class="div_section_proyectos">
-    <div class="div_generico_centrado">
+    <div class="div_generico_centrado"  id="smoothProyectos">
         <div>
             <hr class="linea_generica_naranja_centrada"/>
         </div>
@@ -151,13 +164,15 @@
     <section class="section_proyectos">
         <div class="slider">
             <div class="item">
-                <h3>Slide 1</h3>
                 <div>
-                    <img src="/CascaronPortafolio/images/JPG_PNG/Español.png" alt="">
+                    <h3>Slide 1</h3>
+                    <div>
+                        <img src="/CascaronPortafolio/images/JPG_PNG/Español.png" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                    </p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
             </div>
             <div class="item">
                 <h3>Slide 2</h3>
@@ -211,7 +226,7 @@
 
 <!--Tecnologias  inicio-->
 <section class="section_tecnologias">
-    <div class="div_generico_centrado">
+    <div class="div_generico_centrado" id="smoothTecnologias">
         <div>
             <hr class="linea_generica_naranja_centrada"/>
         </div>
@@ -266,7 +281,7 @@
 
 <!-- Formulario inicio -->
     <section class="section_formulario" id="formulario">
-        <div class="div_generico_centrado">
+        <div class="div_generico_centrado"  id="smoothContactame">
             <div>
                 <hr class="linea_generica_naranja_centrada"/>
             </div>

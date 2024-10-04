@@ -26,9 +26,76 @@ a{
   text-decoration: none;
 }
 
+h1{
+  font-size: 13rem; 
+}
+
 h2,h3,h4{
   font-size: 2.3rem;
   color: var(--naranja-primario);
+}
+
+.orange-line {
+  border: .18rem solid var(--naranja-primario); 
+  width: 12rem;
+  margin-top: 3.4rem;
+  margin-left: 1rem;
+}
+
+.section_contenido_principal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_contenido_principal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+}
+
+.myName{
+  z-index: 1;
+  margin-left: 6rem;
+}
+
+.imageContainer {
+  position: relative;
+  left: -25rem;
+  bottom: -12.5rem;
+  z-index: 2; 
+}
+
+.img_yo{
+  width: 75rem;
+  object-fit: cover;
+}
+
+.div_info{
+  font-size: 2.5rem;
+}
+
+.info_p{
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+
+.info_title{
+  font-size: 3rem;
+}
+
+.info_subtitle{
+  font-weight: 900;
+}
+
+.info_desc{
+  font-style: italic;
+  font-weight: 600;
+}
+
+.div_desarrollador{
+  display: flex;
 }
 
 .div_generico{
@@ -51,6 +118,13 @@ h2,h3,h4{
   margin-left: 1rem;
 }
 
+.linea_generica_principal{
+  border: .25rem solid var(--naranja-primario); 
+  width: 15rem;
+  margin-top: 4.2rem;
+  margin-left: 1rem;
+}
+
 .linea_generica_naranja_centrada{
   border: .18rem solid var(--naranja-primario); 
   width: 5rem;
@@ -63,6 +137,7 @@ h2,h3,h4{
 .navegacion_principal{
   display: flex;
   margin-left: 5rem;
+  margin-top: 1.6rem;
 }
 
 .navegacion_div{
@@ -76,6 +151,7 @@ h2,h3,h4{
   font-size: 2.5rem;
   display: inline;
   transition: color 0.5s ease-in-out;
+  color: var(--blanco-primario);
 }
 
 .navegacion_div p:hover{
@@ -94,13 +170,13 @@ h2,h3,h4{
 
 /* header end */
 
-#lightnes:hover, #ingles:hover,.navegacion_p:hover, #curriculum:hover{
+#lightnes:hover, #img_ingles:hover,.navegacion_p:hover, #img_curriculum:hover{
   cursor: pointer;
   transition: transform 0.2s;
   transform: scale(1.1);
 }
 
-#lightnes, #ingles, #curriculum{
+#lightnes, #img_ingles, #img_curriculum{
   max-width: 5rem;
   margin: 2rem;
   margin-bottom: 0;
@@ -419,5 +495,5 @@ h2,h3,h4{
   transform: scale(1.1);
   transition: transform 0.3s;
 }
-
 /* Section footer end */
+

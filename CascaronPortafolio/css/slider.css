@@ -36,6 +36,15 @@ div.highway-slider {
 	}
 }
 
+.img_carrousel {
+	fill: var(--naranja-primario);
+	color: var(--naranja-primario);
+    max-width: 7rem;
+}
+
+
+
+
 @keyframes translatestf {
 	0% { transform:translateX(100%);  }
 	100% { transform:translateX(-500%);  }

@@ -5,6 +5,10 @@
     --blanco-primario: #FFF;
   }
 
+img.img_infinite_carrousel{
+	max-width: 7rem;
+}
+
 section.slide-option {
 	.no-marg { margin:0 0 0 0; }
 }

@@ -36,5 +36,13 @@
     transition: transform 0.2s;
     transform: scale(1.1);
   }
+
+  .navegacion_p, .presentacion_titulo, .locacion{
+    font-weight: bold;
+  }
+  .presentacion_titulo{
+    color: var(--naranja-primario);
+    font-size: 1.8rem;
+  }
   
   /* header end */

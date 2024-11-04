@@ -15,25 +15,10 @@ section.slide-option {
 
 .span_carousel{
 	text-align: center;
-	transform: scale(1.0);
-	transition: transform 0.5s;
 }
 
 .span_carousel:hover{
 	cursor: pointer;
-	transition: transform 0.2s;
-	transform: scale(1.1);
-}
-
-.img_hover{
-	transform: scale(1.0);
-	transition: transform 0.5s;
-}
-
-.img_hover:hover{
-	cursor: pointer;
-	transition: transform 0.2s;
-	transform: scale(1.1);
 }
 
 div.highway-slider {

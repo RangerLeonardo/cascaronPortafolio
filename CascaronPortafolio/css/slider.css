@@ -3,14 +3,37 @@
     --negro-primario: #1e1e1e;
     --negro-secundario: #222222;
     --blanco-primario: #FFF;
-  }
-
-img.img_infinite_carrousel{
-	max-width: 7rem;
 }
+
+.highway-card a { 
+	color: inherit;
+} 
 
 section.slide-option {
 	.no-marg { margin:0 0 0 0; }
+}
+
+.span_carousel{
+	text-align: center;
+	transform: scale(1.0);
+	transition: transform 0.5s;
+}
+
+.span_carousel:hover{
+	cursor: pointer;
+	transition: transform 0.2s;
+	transform: scale(1.1);
+}
+
+.img_hover{
+	transform: scale(1.0);
+	transition: transform 0.5s;
+}
+
+.img_hover:hover{
+	cursor: pointer;
+	transition: transform 0.2s;
+	transform: scale(1.1);
 }
 
 div.highway-slider {
@@ -36,31 +59,34 @@ div.highway-slider {
 	}
 }
 
-.img_carrousel {
+.img_carousel {
 	fill: var(--naranja-primario);
-	color: var(--naranja-primario);
-    max-width: 7rem;
+    width: 7rem;
+	max-width: 7rem;
+	min-width: 7rem;
 }
-
-
-
+.img_carousel_increment_size{
+	width: 16rem;
+	max-width: 16rem;
+	min-width: 16rem;
+}
 
 @keyframes translatestf {
 	0% { transform:translateX(100%);  }
-	100% { transform:translateX(-500%);  }
+	100% { transform:translateX(-1200%);  }
 }
 #stffull div.highway-barrier {
 	ul.highway-lane {
-		width:500%;
+		width:1200%;
 		li.highway-card {
-			animation:translatestf 30s linear infinite;
+			animation:translatestf 90s linear infinite;
 			h4 { font-size:28px; }
 		}
 	}
 }
 
 @keyframes translateinfinite {
-	100% { transform:translateX(calc(-180px * 12));  }
+	100% { transform:translateX(calc(-180px * 45));  }
 }
 #infinite div.highway-barrier {
 	background:var(--negro-primario);
@@ -81,10 +107,11 @@ div.highway-slider {
     }
 
 	ul.highway-lane {
-		width:calc(180px * 24);
+		width:calc(180px * 45);
 		li.highway-card {
 			width:180px;
-			animation:translateinfinite 25s linear infinite;
+			margin-right: 1rem;
+			animation:translateinfinite 80s linear infinite;
 			span.fab {
 				font-size:65px;
 			}

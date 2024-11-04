@@ -38,7 +38,7 @@ div.highway-slider {
 			display:flex;
 			justify-content:center;
 			align-items:center;
-			background:var(--negro-primario);
+			background:var(--negro-secundario);
 			color:var(--naranja-primario);
 		}
 	}
@@ -74,7 +74,7 @@ div.highway-slider {
 	100% { transform:translateX(calc(-180px * 45));  }
 }
 #infinite div.highway-barrier {
-	background:var(--negro-primario);
+	background:var(--negro-secundario);
 	box-shadow:0 3px 10px -3px rgba(0,0,0,0.3);
 	&::before,
 	&::after {
